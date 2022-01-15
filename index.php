@@ -7,3 +7,5 @@ hello = new hello_func();
 echo hello->hello_func();
 */
 echo "Blah blah";
+
+lalala
