@@ -2,5 +2,5 @@
 
 include "includes/autoloader.inc.php";
 
-$first_emp = new Employees_And_Cakes_Parent();
+$first_emp = new Employees();
 echo $first_emp->name;

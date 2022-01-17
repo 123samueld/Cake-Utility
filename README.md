@@ -21,42 +21,50 @@ Skeleton:
     class Employee
         props
             name
-            birthday
+            birthday date
+        method
+            Create_Employee
+                split() sample file into name and date
+                return name and date
 
     class Cake_Day
         props 
-    class Day_Off_And_Cake_Day(Work_Day, Cake_Day_Dictionary, Employee_Dictionary)
-    iterate through each day of the year:
-        build array of work days accounting for non Work Days
-        if (iterate through Employee Dictionary[Birthday]) not in Work Day:
-            assign Day Off to next Work Day
-            assign Cake Day to day after next Work Day
-        else:
-            assign Day Off to Work Day
-            assign Cake Day to next Work Day
+            name 
+            birthday date
+            day off
+            cake day date
+        methods
+            Find_Day_Off
+                filter out non-work days
+                reference birthday date with work days
+                return day off
+            Find_Cake_Day
+                reference day off plus 1 with work days
+                return name and cake day date
 
-   class Sorting_Algorithm(Cake Day_Dictionary, Employee_Dictionary)
-    iterate through Emplpoyee Dictionary[Cake Day]:
-            if 2 or more Cake Day(s) next to each other:
-                if 3 or more Cake Day(s) next to earch other:
-                    first Cake Day converted to Work Day
-                    second Cake Day Large Cake TRUE
-                    third Cake Day converted to Cake Free Day and
-                    thrid Cake Day assigned to next Work Day
-                else:
-                    first Cake Day converted to Work Day
-                    second Cake Day Large Cake TRUE
-                    third day converted to Cake Free Day
-            else:
-                if 2 or more Cake Day(s) on same Working Day:
-                    Large Cake assigned to Cake Day
-                    second day converted to Cake Free Day
-                else:    
-                    Cupcake assigned to Cake Day
-                    second day converted to Cake Free Day
-            
-    class Output_Cake_Day_Dictionary(Cake_Day_Dictionary)
-    iterate through Cake Day Dictionary:
-        fputcsv() as Cake Day, Cupcake, Large Cake, Employee Name(s)
+    class Adjusted_Cake_Day
+        props 
+            name
+            cake day date
+            cupcake
+            large cake
+        methods
+            Sort_Exceptions_For_Adjusted_Cake_Day_Date
+                return name(s) Cake_Day_Date
+            Sort_Exceptions_For_Cake_Type
+                return cupcake/large cake 
+
+    class Create_CSV_File
+        props
+            name
+            cake day date
+            cupcake
+            large cake
+        methods
+            Write_To_CSV_File
+                fputcsv() as name(s), cake day date, cupcake, large cake
+
+iterate through sample file:
+    for each employee, instantiate Create_CSV_File 
 
 

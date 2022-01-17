@@ -1,5 +1,5 @@
 <?php
 
-class Employees_And_Cakes_Parent{
+class Employee{
     public $name = 'Sam';
 }
