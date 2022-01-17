@@ -18,21 +18,13 @@ This is the plan for the app:
 
 Skeleton:
 
-    class Employees_And_Cakes()
-    Establish props:
-        Work Day
-        Employee Dictionary with:
-            Employee Name, Birthday, Day Off
-        Cake Day Dictionary with:
-            Employee Name(s), Cake Day, Cupcake, Large Cake
-        Cake Free Day
+    class Employee
+        props
+            name
+            birthday
 
-    
-    class Build_Employee_Dictionary(Employee_Dictionary)
-        readfile(employee sample file)
-        split() each employee's data and birthday to create Employee Dictionary
-
-
+    class Cake_Day
+        props 
     class Day_Off_And_Cake_Day(Work_Day, Cake_Day_Dictionary, Employee_Dictionary)
     iterate through each day of the year:
         build array of work days accounting for non Work Days
