@@ -1,4 +1,4 @@
-#Cake-Utility
+# Cake-Utility
 
 Setup:
     I'd never ran PHP from the command line and it was giving me some trouble. I felt it wasn't the core subject of the challenge so I skipped it to save time and effort. I'm running the app using Laragon WAMP. It should be possible to run the app with WAMP/XAMP and probably Docker. Alternativly I can strongly reccomend Laragon for it's blisteringly fast setup time (10 mins start to finish).
@@ -6,17 +6,19 @@ Setup:
 Thoughts about this app:
     I've not done Unit Testing before, although I'm aware of the concept. I think during a technical test is not the time to learn test driven development, but it's a best-practice I'm eager to learn.
 
-Possible Bug/Error:
-    It appears there's an error in the question. In summary it says "output in format: num of small cakes, num of large cakes etc". This could refer to num of cakes per year or per day. The last rule is "no more than one cake per day". This creates a lack of clarity. I'm going to follow the format laid out by the examples.  
+Possible Error & Bug:
+    Possible Error:
+        It appears there's an error in the question. In summary it says "output in format: num of small cakes, num of large cakes etc". It doesn't state wether it's num of cakes per year or per day. The last rule is "no more than one cake per day". This creates a lack of clarity. I'm going to follow the format laid out by the examples which is per diam.
 
-    If there are like +4 Cake Days in a row that would likely cause overlap betweek Cake Days and Cake Free Days, probably more overlap. It would be easy to add more layres of checks to handle the issue. 
+    Possible Bug:
+        If there are like +4 Cake Days in a row that would likely cause overlap betweek Cake Days and Cake Free Days, probably more overlap. It would be easy to add more layres to the algorithm to handle the issue. 
 
 This is the plan for the app:
 
 
 Skeleton:
 
-    class Employees_And_Cakes_Parent()
+    class Employees_And_Cakes()
     Establish props:
         Work Day
         Employee Dictionary with:
