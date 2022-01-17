@@ -6,9 +6,9 @@ function myAutoloader($className){
     $extension = ".class.php";
     $fullPath = $pathPrefix . $className . $extension;
 
-    if (file_exists($path_to_file)) {
-		include_once $fullPath;
-    }else{
-        echo"Sorry ". $className. " class not found";
+    if (!file_exists($fullPath)) {
+      echo"Sorry ". $className. " class not found";
+      return FALSE;
     }
+    include_once $fullPath;
 }
