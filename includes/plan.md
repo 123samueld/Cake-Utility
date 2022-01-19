@@ -18,13 +18,12 @@
 #### methods
             Find_Day_Off
                 filter out non-work days
-                reference birthday date with work days
+                intersect birthday date with work days
                 return day off
             Find_Cake_Day
-                reference day off plus 1 with work days
+                intersect day off plus 1 with work days
                 return name and cake day date
-            Name_And_Cake_Day_Array
-                create name and cake day array
+
 
 ### class Algorithms_Sorting_Cake_Day_And_Type
 #### props 

@@ -12,6 +12,5 @@ class Employees{
         $this->sample_data_set = fread($this->handle, filesize($this->file_name));
         fclose($this->handle);
         $this->name_and_birthday_array = explode("\n", $this->sample_data_set);
-        var_dump($this->name_and_birthday_array[1]);
     }
 }
