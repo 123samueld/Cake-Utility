@@ -50,8 +50,6 @@ class Cake_Day extends Employees{
         #next working day after match is cake day
         self::Create_Name_And_Birthday_Array();
         print_r($this->name_and_birthday_array);
-
-
     }
 
     public function Name_And_Cake_Day_Assoc_Array(){
