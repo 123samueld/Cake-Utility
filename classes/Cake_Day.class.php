@@ -31,15 +31,31 @@ class Cake_Day extends Employees{
             }
         }
     }
-
+/*
     public function Find_Cake_Day(){
         self::Create_Name_And_Birthday_Array();
         self::Find_Day_Off();
         $a = $this->name_and_birthday_array;
         $b = $this->working_days;
-        $c = array_intersect_assoc($a, $b);
-        #echo gettype($c);
-        var_dump($a);
+        for ($x = 0; $x <= 11; $x++){
+            $d = $a[$x];
+            print_r($a);
+        }
+    }
+*/
+
+    public function Find_Cake_Day(){
+        #compare birthdays and working days
+        #return dates that match
+        #next working day after match is cake day
+        self::Create_Name_And_Birthday_Array();
+        print_r($this->name_and_birthday_array);
+
 
     }
+
+    public function Name_And_Cake_Day_Assoc_Array(){
+        #connect names to cake days. Probably assoc array?
+    }
+
 }

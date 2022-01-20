@@ -13,64 +13,18 @@ It appears there's an error in the question. In summary it says "output in forma
 ### Possible Bug:
 If there are like +4 Cake Days in a row that would likely cause overlap betweek Cake Days and Cake Free Days, probably more overlap. It would be easy to add more layres to the algorithm to handle the issue. 
 
-
-
-## This is the plan for the app:
-
-## Skeleton:
-
-### class Employee
-#### props
-name
-birthday
-name and birthday array
-#### method
-Create_Name_And_Birthday_Array
-split() sample file into name and date
-create name and birthday array 
-
-### class Cake_Day
-#### props 
-name and birthday array
-day off
-cake day
-name and cake day array
-#### methods
-Find_Day_Off
-filter out non-work days
-reference birthday date with work days
-return day off
-Find_Cake_Day
-reference day off plus 1 with work days
-return name and cake day date
-Name_And_Cake_Day_Array
-create name and cake day array
-
-### class Algorithms_Sorting_Cake_Day_And_Type
-#### props 
-name and cake day array
-small cake
-large cake
-name cake day small cake and large cake array
-#### methods
-Algorithm_For_Sorting_Cake_Day_Adjustments
-iterate through name and cake day array
-pass the data through the cake date sorting algorithm
-create name cake day small cake and large cake array
-Algorithm_For_Sorting_Cake_Type
-iterate through name and cake day array
-pass the data through the cake type sorting algorithm
-update name cake day small cake and large cake array
-
-### class Create_CSV_File
-#### props
-name cake day small cake and large cake array
-#### methods
-Write_To_CSV_File
-fopen()
-fputcsv() as name(s), cake day, small cake, large cake
-fclose()
-
-instantiate an Create_CSV_File object 
-
-
+## Week log
+### Day 1 Friday
+Setting up the project, Laravel, Github and the autoloader
+### Day 2 Saturday
+First architecture iteration, attemping to solve the problem in the planning stage before writing code
+### Day 3 Sunday
+Rest day
+### Day 4 Monday
+Second architecture iteration, improved problem solving.
+### Day 5 Tuesday
+Third architecture iteration, improved problem solving. Created class Employees.
+### Day 6 Wednesday
+Created Cake_Day class, first method. Stuck trying to solve second method: Find_Cake_Day(). Struggling to intersect values between employee data array and array of working days.
+### Day 7 Thursday
+Still stuck trying to solve intersection between employee data and working days. 
